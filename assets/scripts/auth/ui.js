@@ -2,13 +2,13 @@ const store = require('../store.js')
 
 const signUpSuccess = (data) => {
     console.log("In signUpSuccess")
-  // $('#AccountCreationSuccess').modal('show')
+  $('#AccountCreationSuccess').modal('show')
 }
 
 const signUpFailure = (error) => {
   // console.error(error)
     console.log("In onSignFailure")
-  // $('#AccountCreationFailure').modal('show')
+  $('#AccountCreationFailure').modal('show')
 }
 
 
@@ -21,13 +21,13 @@ const signInSuccess = (data) => {
   // $('#sign-up').hide()
   // $('#sign-in').hide()
   // $('#change-password').show()
-  // $('#LogInSuccess').modal('show')
+  $('#LogInSuccess').modal('show')
 }
 
 const signInFailure = (error) => {
   console.error(error)
   console.log("in signInFailure")
-  // $('#LogFailure').modal('show')
+  $('#LogFailure').modal('show')
 }
 
 const autoSignInSuccess = (data) => {
@@ -38,7 +38,7 @@ const autoSignInSuccess = (data) => {
   // $('#stats').show()
   // $('#sign-up').hide()
   // $('#sign-in').hide()
-  // $('#change-password').show()
+  $('#change-password').show()
 }
 
 const autoSignInFailure = (error) => {
@@ -50,12 +50,12 @@ const autoSignInFailure = (error) => {
 
 const changePasswordSuccess = (data) => {
   console.log('change password success')
-  // $('#passWordChangeSuccess').modal('show')
+  $('#passWordChangeSuccess').modal('show')
 }
 
 const changePasswordFailure = (data) => {
   console.log('change password failure')
-  // $('#passWordChangeFailure').modal('show')
+  $('#passWordChangeFailure').modal('show')
 }
 
 const signOutSuccess = (data) => {
@@ -69,7 +69,7 @@ const signOutSuccess = (data) => {
   // $('.userStats').hide()
   // $('#board').hide()
   // $('.status').hide()
-  // $('#signOutSuccess').modal('show')
+  $('#signOutSuccess').modal('show')
 }
 
 const signOutFailure = (data) => {
