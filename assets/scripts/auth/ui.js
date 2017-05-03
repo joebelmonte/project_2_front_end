@@ -58,23 +58,25 @@ const changePasswordFailure = (data) => {
   // $('#passWordChangeFailure').modal('show')
 }
 
-// const signOutSuccess = (data) => {
-//   store.user = null
-//   $('#sign-up').show()
-//   $('#sign-in').show()
-//   $('#signOut').hide()
-//   $('#startGame').hide()
-//   $('#stats').hide()
-//   $('.userStats').hide()
-//   $('#board').hide()
-//   $('.status').hide()
-//   $('#signOutSuccess').modal('show')
-// }
-//
-// const signOutFailure = (data) => {
-//   $('#sign-up').show()
-//   $('#sign-in').show()
-// }
+const signOutSuccess = (data) => {
+  store.user = null
+  console.log("Sign out success.")
+  // $('#sign-up').show()
+  // $('#sign-in').show()
+  // $('#signOut').hide()
+  // $('#startGame').hide()
+  // $('#stats').hide()
+  // $('.userStats').hide()
+  // $('#board').hide()
+  // $('.status').hide()
+  // $('#signOutSuccess').modal('show')
+}
+
+const signOutFailure = (data) => {
+  console.log("sign out failure")
+  // $('#sign-up').show()
+  // $('#sign-in').show()
+}
 
 module.exports = {
   signUpSuccess,
@@ -83,8 +85,8 @@ module.exports = {
   signInFailure,
   changePasswordSuccess,
   changePasswordFailure,
-  // signOutSuccess,
-  // signOutFailure,
+  signOutSuccess,
+  signOutFailure,
   // postGameSuccess,
   // postGameFailure,
   // getUserGamesSuccess,

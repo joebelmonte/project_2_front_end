@@ -38,20 +38,21 @@ const changePassword = (data) => {
   })
 }
 
-// const signOut = (data) => {
-//   return $.ajax({
-//     url: config.apiOrigin + '/sign-out/' + store.user.id,
-//     method: 'DELETE',
-//     headers: {
-//       Authorization: 'Token token=' + store.user.token
-//     }
-//   })
-// }
+const signOut = (data) => {
+  return $.ajax({
+    url: config.apiOrigin + '/sign-out/' + store.user.id,
+    method: 'DELETE',
+    headers: {
+      Authorization: 'Token token=' + store.user.token
+    }
+  })
+}
 
 
 module.exports = {
   signUp,
   signIn,
   signInAuto,
-  changePassword
+  changePassword,
+  signOut
 }
