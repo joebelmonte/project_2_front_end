@@ -30,6 +30,24 @@ const signInFailure = (error) => {
   // $('#LogFailure').modal('show')
 }
 
+const autoSignInSuccess = (data) => {
+  store.user = data.user
+  console.log("auto sign in success")
+  // $('#signOut').show()
+  // $('#startGame').show()
+  // $('#stats').show()
+  // $('#sign-up').hide()
+  // $('#sign-in').hide()
+  // $('#change-password').show()
+}
+
+const autoSignInFailure = (error) => {
+  // console.error(error)
+  console.log("auto sign in failure")
+  $('#LogFailure').modal('show')
+}
+
+
 // const changePasswordSuccess = (data) => {
 //   $('#passWordChangeSuccess').modal('show')
 // }
@@ -60,7 +78,7 @@ module.exports = {
   signUpSuccess,
   signUpFailure,
   signInSuccess,
-  signInFailure
+  signInFailure,
   // changePasswordSuccess,
   // changePasswordFailure,
   // signOutSuccess,
@@ -70,6 +88,6 @@ module.exports = {
   // getUserGamesSuccess,
   // getUserGamesFailure,
   // userGamesPlayed,
-  // autoSignInSuccess,
-  // autoSignInFailure
+  autoSignInSuccess,
+  autoSignInFailure
 }

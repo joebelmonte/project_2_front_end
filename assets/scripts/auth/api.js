@@ -19,14 +19,14 @@ const signIn = (data) => {
   })
 }
 
-// const signInAuto = (data) => {
-//   return $.ajax({
-//     url: config.apiOrigin + '/sign-in',
-//     method: 'POST',
-//     data
-//   })
-// }
-//
+const signInAuto = (data) => {
+  return $.ajax({
+    url: config.apiOrigin + '/sign-in',
+    method: 'POST',
+    data
+  })
+}
+
 // const changePassword = (data) => {
 //   return $.ajax({
 //     url: config.apiOrigin + '/change-password/' + store.user.id,
@@ -51,5 +51,6 @@ const signIn = (data) => {
 
 module.exports = {
   signUp,
-  signIn
+  signIn,
+  signInAuto
 }

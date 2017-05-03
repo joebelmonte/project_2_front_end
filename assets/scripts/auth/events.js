@@ -9,11 +9,11 @@ const onSignUp = function (event) {
   event.preventDefault()
   api.signUp(data)
     .then(ui.signUpSuccess)
-    // .then(() => {
-    //   api.signInAuto(data)
-    //     .then(ui.autoSignInSuccess)
-    //     .catch(ui.autoSignInFailure)
-    // })
+    .then(() => {
+      api.signInAuto(data)
+        .then(ui.autoSignInSuccess)
+        .catch(ui.autoSignInFailure)
+    })
     .catch(ui.signUpFailure)
 }
 
