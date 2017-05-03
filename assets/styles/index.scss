@@ -1,2 +1,30 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
+body {
+}
+
+.signup {
+  color: red;
+}
+
+nav {
+  background-color: blue;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 10px;
+  text-align: center;
+  background-color: blue;
+  // height: 100px;
+  width: 100%;
+  color: white;
+}
