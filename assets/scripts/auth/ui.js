@@ -48,14 +48,16 @@ const autoSignInFailure = (error) => {
 }
 
 
-// const changePasswordSuccess = (data) => {
-//   $('#passWordChangeSuccess').modal('show')
-// }
-//
-// const changePasswordFailure = (data) => {
-//   $('#passWordChangeFailure').modal('show')
-// }
-//
+const changePasswordSuccess = (data) => {
+  console.log('change password success')
+  // $('#passWordChangeSuccess').modal('show')
+}
+
+const changePasswordFailure = (data) => {
+  console.log('change password failure')
+  // $('#passWordChangeFailure').modal('show')
+}
+
 // const signOutSuccess = (data) => {
 //   store.user = null
 //   $('#sign-up').show()
@@ -79,8 +81,8 @@ module.exports = {
   signUpFailure,
   signInSuccess,
   signInFailure,
-  // changePasswordSuccess,
-  // changePasswordFailure,
+  changePasswordSuccess,
+  changePasswordFailure,
   // signOutSuccess,
   // signOutFailure,
   // postGameSuccess,
