@@ -2,6 +2,7 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
 
 body {
+  text-align: center;
 }
 
 .signup {
@@ -13,6 +14,7 @@ nav {
   color: white;
   font-size: 18px;
   padding: 10px;
+  text-align: left;
 }
 
 h1 {
