@@ -15,12 +15,10 @@ const signUpFailure = (error) => {
 const signInSuccess = (data) => {
   store.user = data.user
   console.log("on signInSuccess")
-  // $('#signOut').show()
-  // $('#startGame').show()
-  // $('#stats').show()
-  // $('#sign-up').hide()
-  // $('#sign-in').hide()
-  // $('#change-password').show()
+  $('#signOut').show()
+  $('#sign-up').hide()
+  $('#sign-in').hide()
+  $('#change-password').show()
   $('#LogInSuccess').modal('show')
 }
 
@@ -33,11 +31,9 @@ const signInFailure = (error) => {
 const autoSignInSuccess = (data) => {
   store.user = data.user
   console.log("auto sign in success")
-  // $('#signOut').show()
-  // $('#startGame').show()
-  // $('#stats').show()
-  // $('#sign-up').hide()
-  // $('#sign-in').hide()
+  $('#signOut').show()
+  $('#sign-up').hide()
+  $('#sign-in').hide()
   $('#change-password').show()
 }
 
@@ -61,21 +57,17 @@ const changePasswordFailure = (data) => {
 const signOutSuccess = (data) => {
   store.user = null
   console.log("Sign out success.")
-  // $('#sign-up').show()
-  // $('#sign-in').show()
-  // $('#signOut').hide()
-  // $('#startGame').hide()
-  // $('#stats').hide()
-  // $('.userStats').hide()
-  // $('#board').hide()
-  // $('.status').hide()
+  $('#sign-up').show()
+  $('#sign-in').show()
+  $('#signOut').hide()
+  $('#change-password').hide()
   $('#signOutSuccess').modal('show')
 }
 
 const signOutFailure = (data) => {
   console.log("sign out failure")
-  // $('#sign-up').show()
-  // $('#sign-in').show()
+  $('#sign-up').show()
+  $('#sign-in').show()
 }
 
 module.exports = {
@@ -87,11 +79,6 @@ module.exports = {
   changePasswordFailure,
   signOutSuccess,
   signOutFailure,
-  // postGameSuccess,
-  // postGameFailure,
-  // getUserGamesSuccess,
-  // getUserGamesFailure,
-  // userGamesPlayed,
   autoSignInSuccess,
   autoSignInFailure
 }

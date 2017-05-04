@@ -7,7 +7,7 @@ body {
 
 nav {
   background-color: blue;
-  font-size: 18px;
+  font-size: 14px;
   padding: 10px;
   text-align: left;
 }
@@ -29,4 +29,12 @@ footer {
 .modalContainer{
   text-align: left;
   font-size: 18px;
+}
+
+#change-password{
+  display: none;
+}
+
+#signOut{
+  display: none;
 }
