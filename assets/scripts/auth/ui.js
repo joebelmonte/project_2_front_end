@@ -67,6 +67,7 @@ const signOutSuccess = (data) => {
   $('#change-password').hide()
   $('#signOutSuccess').modal('show')
   $('#sign-up').trigger('reset')
+  $('#sign-in').trigger('reset')
 }
 
 const signOutFailure = (data) => {

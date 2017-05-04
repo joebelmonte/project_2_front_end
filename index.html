@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Example</title>
+      <title>Movie Night</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <!-- Do not add `link` tags unless you know what you are doing -->
@@ -12,7 +12,8 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body class="container-fluid">
-      <nav>
+      <ul>
+        <li>
         <form id="sign-in">
           <fieldset>
             <input type="text" name="credentials[email]" placeholder="Email">
@@ -20,6 +21,8 @@
             <input type="submit" name="submit" value="Sign in">
           </fieldset>
         </form>
+      </li>
+      <li>
         <form id="change-password">
           <fieldset>
             <input type="password" name="passwords[old]" placeholder="old password">
@@ -27,12 +30,18 @@
             <input type="submit" name="submit" value="Change password">
           </fieldset>
         </form>
+      </li>
+      <!-- <li>
+        Username here
+      </li> -->
+      <li style="float:right">
         <form id="signOut">
           <fieldset>
             <input type="submit" name="submit" value="Sign out">
           </fieldset>
         </form>
-      </nav>
+      </li>
+      </ul>
       <h1>Movie Night</h1>
 
       <p>Welcome to my Movie Night Web app.  Please create an account below or sign in above.</p>
