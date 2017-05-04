@@ -47,11 +47,15 @@ const autoSignInFailure = (error) => {
 const changePasswordSuccess = (data) => {
   console.log('change password success')
   $('#passWordChangeSuccess').modal('show')
+  // document.getElementById("change-password").reset()
+  // $('#change-password').reset()
+  $('#change-password').trigger('reset')
 }
 
 const changePasswordFailure = (data) => {
   console.log('change password failure')
   $('#passWordChangeFailure').modal('show')
+  $('#change-password').trigger('reset')
 }
 
 const signOutSuccess = (data) => {
@@ -62,6 +66,7 @@ const signOutSuccess = (data) => {
   $('#signOut').hide()
   $('#change-password').hide()
   $('#signOutSuccess').modal('show')
+  $('#sign-up').trigger('reset')
 }
 
 const signOutFailure = (data) => {
